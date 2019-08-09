@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DutyStateButton">
+        <attr name="state_disabled" format="boolean"/>
+        <attr name="state_selected" format="boolean"/>
+        <attr name="hos_normal" format="boolean" />
+        <attr name="hos_warning" format="boolean" />
+        <attr name="hos_alert" format="boolean" />
+    </declare-styleable>
+</resources>

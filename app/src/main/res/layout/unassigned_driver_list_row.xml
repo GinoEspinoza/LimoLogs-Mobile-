@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="10dp"
+    android:weightSum="2"
+    android:orientation="horizontal">
+
+
+
+    <TextView
+        android:id="@+id/vehicle_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="Vehicle Name"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/col_start_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.55"
+        android:textColor="@android:color/black"
+        android:text="Start Time"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/col_end_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.55"
+        android:textColor="@android:color/black"
+        android:text="End Time"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:gravity="center_vertical|center">
+        <CheckBox
+            android:id="@+id/check_unassigned_driver"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Select"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

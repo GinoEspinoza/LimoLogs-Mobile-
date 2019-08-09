@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/nav_add_trip"
+        android:title="ADD TRIP" />
+    <item
+        android:id="@+id/nav_addvehicle"
+        android:title="CHANGE VEHICLE" />
+    <item
+        android:id="@+id/nav_post_trip"
+        android:title="POST TRIP INSPECTION" />
+    <item
+        android:id="@+id/nav_form"
+        android:title="EDIT LOG FORM" />
+
+    <item
+        android:id="@+id/nav_update_dvir"
+        android:title="EDIT DVIR" />
+    <item
+        android:id="@+id/nav_editlogs"
+        android:title="EDIT LOGS" />
+    <item
+        android:id="@+id/nav_view_graph"
+        android:title="VIEW MY GRAPH" />
+    <item
+        android:id="@+id/nav_recap"
+        android:title="RECAP" />
+    <item
+        android:id="@+id/nav_logsheet_photo"
+        android:title="LOGSHEET PHOTOS" />
+    <item
+        android:id="@+id/nav_vehicle_docs"
+        android:title="VEHICLE DOCUMENTS" />
+    <item
+        android:id="@+id/nav_inspection"
+        android:title="ROADSIDE INSPECTION" />
+    <item
+        android:id="@+id/nav_accident_report"
+        android:title="ACCIDENT REPORT" />
+
+    <item
+        android:id="@+id/nav_signout"
+        android:title="SIGN OUT" />
+
+</menu>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.dotcompliance.limologs.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <com.dotcompliance.limologs.view.DutyStateButton
+        android:id="@+id/duty_off_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.25"
+        android:gravity="center_vertical"
+        android:padding="14dp"
+        android:background="@drawable/duty_button_selector"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:text="OFF" />
+        <TextView
+            android:id="@+id/text_off_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceButton"
+            android:text="TIME OFF TODAY:"
+            android:visibility="gone"/>
+
+    </com.dotcompliance.limologs.view.DutyStateButton>
+
+    <com.dotcompliance.limologs.view.DutyStateButton
+        android:id="@+id/duty_sb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.25"
+        android:gravity="center_vertical"
+        android:padding="14dp"
+        android:background="@drawable/duty_button_selector"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:text="SLEEPER BERTH" />
+        <TextView
+            android:id="@+id/text_sb_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceButton"
+            android:text="SB TIME TODAY:"
+            android:visibility="gone"/>
+
+    </com.dotcompliance.limologs.view.DutyStateButton>
+
+    <com.dotcompliance.limologs.view.DutyStateButton
+        android:id="@+id/duty_driving_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.25"
+        android:gravity="center_vertical"
+        android:padding="14dp"
+        android:background="@drawable/duty_button_selector"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:text="DRIVING" />
+        <TextView
+            android:id="@+id/text_driving_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceButton"
+            android:text="DRIVING TIME TODAY:"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/text_driving_remain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceButton"
+            android:text="DRIVING TIME REMAINING:" />
+    </com.dotcompliance.limologs.view.DutyStateButton>
+
+    <com.dotcompliance.limologs.view.DutyStateButton
+        android:id="@+id/duty_on_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.25"
+        android:gravity="center_vertical"
+        android:padding="14dp"
+        android:background="@drawable/duty_button_selector"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:text="ON DUTY" />
+        <TextView
+            android:id="@+id/text_on_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceButton"
+            android:text="ON DUTY TIME TODAY:"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/text_on_remain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceButton"
+            android:text="ON DUTY TIME REMAINING:" />
+        <TextView
+            android:id="@+id/text_cycle_remain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceButton"
+            android:text="CYCLE TIME REMAINING:" />
+
+    </com.dotcompliance.limologs.view.DutyStateButton>
+
+</LinearLayout>

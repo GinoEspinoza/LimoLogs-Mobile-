@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dotcompliance.limologs"
+    android:versionCode="1012"
+    android:versionName="1.0.12">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name=".LimoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.WithActionBar">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LogsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TripFormActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VehicleListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_vehicle_list" />
+        <activity
+            android:name=".UnassignedTimeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DriverFormActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DefectActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Defects" />
+        <activity
+            android:name=".InspectionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Inspection" />
+        <activity
+            android:name=".SendLogActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".LimoBaseActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".PreviewLogActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".LogsListActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".EditDutyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".DailyLogActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".LastDvirActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Last Dvir" />
+        <activity
+            android:name=".TotalPreviewActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".MechanicHomeActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".DvirCheckActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".RecapActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".MonthlySignActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".MechanicDvirActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".BodyInspectionActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".MechanicInspectActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <activity
+            android:name=".UnassignedDriverActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.LocationUpdateService"
+            android:enabled="true" />
+
+        <service
+            android:name=".service.CheckVehicleCurrentStatusService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".VehicleDocListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_vehicledoc_list" />
+        <activity
+            android:name=".VehicleDocumentDetailActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".LogsheetPhotoActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".view.LogsheetPhotoDetailActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.dotcompliance.limologs.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".AddDamageActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".DriversChecklistActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="org.researchstack.backbone.ui.ViewTaskActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".AskOnDutyActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".NoteLocationActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".CombinedSheetActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".CertifyLogsActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.WithActionBar.NoActionBar" />
+        <activity android:name=".GraphViewActivity" />
+
+
+    </application>
+
+</manifest>

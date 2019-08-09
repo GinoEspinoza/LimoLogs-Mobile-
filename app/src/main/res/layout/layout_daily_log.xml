@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dotcompliance.limologs.DailyLogActivity">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <com.dotcompliance.limologs.view.SelectableGridView
+        android:id="@+id/grid_daily_log"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gridview_height"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_insert_duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert Duty Status" />
+
+        <Button
+            android:id="@+id/button_edit_duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Status" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_edit_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Edit Form" />
+
+    <TextView
+        android:id="@+id/text_hos_alert1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="( ! ) 15 Hour On Duty Limit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorChartViolation"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_hos_alert2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="( ! ) 10 Hour Drive Limit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorChartViolation"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_hos_alert3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="( ! ) 30 Minute Break Required"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorChartViolation"
+        android:visibility="gone" />
+
+    <!--  <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:fillViewport="true">-->
+    <ListView
+        android:id="@+id/listview_duties"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/colorSelectOverlay"></ListView>
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>
+
+

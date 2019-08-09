@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fa0006</color>
+    <color name="colorPrimaryDark">#a00001</color>
+    <color name="colorAccent">#00629f</color>
+
+    <!-- LogGrid colors -->
+    <color name="colorGridBackground">#10F5F5F5</color>
+    <color name="colorGridLine">#333333</color>
+    <color name="colorChartPrimary">#00629f</color>
+    <color name="colorChartTransparent">#8000629f</color>
+    <color name="colorChartViolation">#cf0f00</color>
+    <color name="colorSelectOverlay">#400062af</color>
+
+    <!-- HOS clock colors -->
+    <color name="colorClockDefault">#a5cf72</color>
+    <color name="colorClockWarning">#ffa230</color>
+    <color name="colorClockAlert">#C00000</color>
+
+    <color name="colorLoadingOverlay">#40000000</color>
+
+    <!-- Duty Button colors -->
+    <color name="colorDutyHosNormal">#1baf17</color>
+    <color name="colorDutyHosWarning">#ffa230</color>
+    <color name="colorDutyHosAlert">#d71f0e</color>
+    <color name="colorDutySelected">#101010</color>
+    <color name="colorDutyDisabled">#808080</color>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LimoLogs</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign In</string>
+    <string name="title_activity_vehicle_list">Pick Your Vehicle</string>
+
+    <string name="inspection_text">
+
+    </string>
+    <string name="title_vehicledoc_list">VehicleDocs</string>
+    <string name="title_vehicledoc_detail">VehicleDoc Detail</string>
+    <string name="title_activity_home">HomeActivity</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dotcompliance.limologs.BodyInspectionActivity">
+
+    <LinearLayout
+        android:id="@+id/dummy_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#111"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/text_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:padding="14dp"
+            android:textSize="14sp"
+            android:text="Long Press to add scratch or dent\nSingle Tap to check the damage"/>
+    </LinearLayout>
+
+    <com.dotcompliance.limologs.view.PinnedScaleImageView
+        android:id="@+id/image_diagram_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/dummy_text" />
+
+</RelativeLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/fab_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/tablecell_background"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin">
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DRIVER'S VEHICLE INSPECTION REPORT"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:text="Feb 5, 2016"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin">
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/tablecell_background"
+                android:padding="@dimen/tablecell_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Driver"
+                    android:textAppearance="?android:attr/textAppearanceButton"/>
+                <TextView
+                    android:id="@+id/text_driver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Joe Guinn"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="-1.5dp"
+                android:background="@drawable/tablecell_background"
+                android:padding="@dimen/tablecell_padding"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Vehicle"
+                    android:textAppearance="?android:attr/textAppearanceButton"/>
+                <TextView
+                    android:id="@+id/text_vehicle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="-1.5dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/tablecell_background"
+                android:padding="@dimen/tablecell_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Carrier"
+                    android:textAppearance="?android:attr/textAppearanceButton"/>
+                <TextView
+                    android:id="@+id/text_carrier"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="-1.5dp"
+                android:background="@drawable/tablecell_background"
+                android:padding="@dimen/tablecell_padding"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Carrier Address"
+                    android:textAppearance="?android:attr/textAppearanceButton"/>
+                <TextView
+                    android:id="@+id/text_carrier_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="-1.5dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/tablecell_background"
+                android:padding="@dimen/tablecell_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Start Odometer"
+                    android:textAppearance="?android:attr/textAppearanceButton"/>
+                <TextView
+                    android:id="@+id/text_startodo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="-1.5dp"
+                android:background="@drawable/tablecell_background"
+                android:padding="@dimen/tablecell_padding"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="End Odometer"
+                    android:textAppearance="?android:attr/textAppearanceButton"/>
+                <TextView
+                    android:id="@+id/text_endodo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="-1.5dp">
+            <LinearLayout
+                android:layout_weight="1.0"
+                android:background="@drawable/tablecell_background"
+                android:padding="@dimen/tablecell_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="Location"
+                    android:textAppearance="?android:attr/textAppearanceButton"/>
+                <TextView
+                    android:id="@+id/text_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="-1.5dp">
+            <RelativeLayout
+                android:layout_weight="1.0"
+                android:background="@drawable/tablecell_background"
+                android:padding="@dimen/tablecell_padding"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/text_no_defects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="No defects found"/>
+                <ListView
+                    android:id="@+id/list_defects"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="gone">
+                </ListView>
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/text_defectable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:visibility="gone"
+        android:text="This defect affects the safe operation of the motor vehicle or is likely to result in its mechanical breakdown."/>
+
+    <TextView
+        android:id="@+id/text_mechanic_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text=""/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/lay_mechanic_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgview_mechanic_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/tablecell_background"></LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Mechanic Signature"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgview_driver_sign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/tablecell_background"></LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Driver Signature"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

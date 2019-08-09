@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item app:state_selected="true" app:hos_alert="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorDutyHosAlert" />
+            <corners
+                android:radius="8dp">
+            </corners>
+            <stroke
+                android:color="@color/colorDutySelected"
+                android:width="5dp"/>
+        </shape>
+    </item>
+
+    <item app:state_selected="true" app:hos_warning="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorDutyHosWarning" />
+            <corners
+                android:radius="8dp">
+            </corners>
+            <stroke
+                android:color="@color/colorDutySelected"
+                android:width="5dp"/>
+        </shape>
+    </item>
+
+    <item app:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorDutyHosNormal" />
+            <corners
+                android:radius="8dp" >
+            </corners>
+            <stroke
+                android:color="@color/colorDutySelected"
+                android:width="5dp"/>
+        </shape>
+    </item>
+
+    <item app:hos_warning="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorDutyHosWarning" />
+            <corners
+                android:radius="8dp" >
+            </corners>
+        </shape>
+    </item>
+
+    <item app:hos_alert="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorDutyHosAlert" />
+            <corners
+                android:radius="8dp" >
+            </corners>
+        </shape>
+    </item>
+
+    <item app:state_disabled="true" app:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorDutyDisabled" />
+            <corners
+                android:radius="8dp" >
+            </corners>
+            <stroke
+                android:color="@color/colorDutySelected"
+                android:width="5dp"/>
+        </shape>
+    </item>
+
+    <item app:state_disabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorDutyDisabled" />
+            <corners
+                android:radius="8dp" >
+            </corners>
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorDutyHosNormal" />
+            <corners
+                android:radius="8dp" >
+            </corners>
+        </shape>
+    </item>
+</selector>

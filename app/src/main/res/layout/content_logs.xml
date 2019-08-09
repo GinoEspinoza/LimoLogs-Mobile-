@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dotcompliance.limologs.LogsActivity"
+    tools:showIn="@layout/app_bar_logs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                    <RadioButton
+                        android:id="@+id/radio_duty_off"
+                        android:layout_width="@dimen/dutystate_button_size"
+                        android:layout_height="@dimen/dutystate_button_size"
+                        android:button="@null"
+                        android:background="@drawable/dutystate_selector"
+                        android:text="OFF"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/dutystate_textcolor_selector"
+                        android:checked="true"
+                        android:onClick="onSelectDuty" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radio_duty_sleep"
+                        android:layout_width="@dimen/dutystate_button_size"
+                        android:layout_height="@dimen/dutystate_button_size"
+                        android:enabled="true"
+                        android:button="@null"
+                        android:text="SB"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/dutystate_textcolor_selector"
+                        android:background="@drawable/dutystate_selector"
+                        android:onClick="onSelectDuty" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_duty_drive"
+                        android:layout_width="@dimen/dutystate_button_size"
+                        android:layout_height="@dimen/dutystate_button_size"
+                        android:button="@null"
+                        android:text="DR"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/dutystate_textcolor_selector"
+                        android:background="@drawable/dutystate_selector"
+                        android:onClick="onSelectDuty" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_duty_on"
+                        android:layout_width="@dimen/dutystate_button_size"
+                        android:layout_height="@dimen/dutystate_button_size"
+                        android:button="@null"
+                        android:text="ON"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/dutystate_textcolor_selector"
+                        android:background="@drawable/dutystate_selector"
+                        android:onClick="onSelectDuty" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/lay_save_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/layout_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/edit_location"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Location" />
+                        </android.support.design.widget.TextInputLayout>
+                        <ProgressBar
+                            android:id="@+id/progressGps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:paddingTop="6dp"
+                            android:layout_marginRight="5dp"
+                            android:visibility="gone" />
+                        <ImageButton
+                            android:id="@+id/button_tracker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/gpstracker"
+                            android:background="@null"
+                            android:onClick="trackGpsLocation"/>
+                    </RelativeLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4">
+                        <EditText
+                            android:id="@+id/edit_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Remarks" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/button_save_status"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:text="Save"
+                        android:onClick="onSaveDutyClick" />
+
+                </LinearLayout>
+
+                <com.dotcompliance.limologs.view.BaseGridView
+                    android:id="@+id/grid_daily_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gridview_height"
+                    android:layout_marginTop="@dimen/fab_margin"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin">
+                    <com.dotcompliance.limologs.view.ClockView
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/clock_size"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:id="@+id/clockview_onduty"/>
+                    <com.dotcompliance.limologs.view.ClockView
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/clock_size"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:id="@+id/clockview_drive"/>
+                    <com.dotcompliance.limologs.view.ClockView
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/clock_size"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:id="@+id/clockview_cycle"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_create_dvir"
+        android:orderInCategory="100"
+        android:title="Create a DVIR"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_body_inspection"
+        android:title="Vehicle Body Inspection"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sign_out"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_logout_variant_white_48dp"
+        android:title="Sign Out"
+        app:showAsAction="withText" />
+</menu>
